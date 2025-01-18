@@ -1,4 +1,4 @@
-// models/cyberpunk.js
+// models/cyberpunk.js  
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -17,4 +17,5 @@ var gameSchema = new Schema({
     },
 });
 
-module.exports.Game = mongoose.model('Game', gameSchema);
+// Экспорт модели напрямую
+module.exports = mongoose.model('Game', gameSchema);
